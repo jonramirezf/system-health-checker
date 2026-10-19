@@ -1,41 +1,36 @@
-# System Health Checker
+# Python - Aprendizaje y prácticas
 
-Primer proyecto de Python enfocado en el monitoreo
-de recursos del sistema.
+Repositorio personal dedicado al aprendizaje de Python, desde sus
+fundamentos hasta el desarrollo de scripts y automatizaciones.
 
-## Objetivo
+El objetivo es mejorar mis habilidades de programación mediante
+ejercicios prácticos, resolución de problemas y pequeños proyectos,
+principalmente aplicados a Linux, Cloud y DevOps.
 
-Aprender Python desarrollando un script que permita
-detectar cuándo el consumo de CPU o memoria supera
-un límite establecido.
+## Contenido
 
-## Estado actual
+Las prácticas estarán orientadas a:
 
-El programa utiliza valores definidos manualmente
-para simular el consumo de recursos.
+- Comprender la lógica y los fundamentos de Python.
+- Trabajar con variables, condicionales, bucles y funciones.
+- Aprender a utilizar estructuras de datos.
+- Leer y procesar archivos, logs y formatos como JSON.
+- Desarrollar scripts para automatizar tareas.
+- Consultar información mediante APIs.
+- Utilizar Python para administrar y monitorear sistemas.
 
-Actualmente permite:
+## Aplicación práctica
 
-- Definir valores de CPU y memoria.
-- Establecer límites de consumo.
-- Comparar valores mediante operadores.
-- Mostrar alertas utilizando condicionales.
+Se utilizará Python para desarrollar herramientas que permitan
+consultar el consumo de CPU, memoria y disco, comparar los valores
+con límites establecidos y generar alertas cuando corresponda.
 
-## Conceptos practicados
+A medida que avance el aprendizaje, se incorporarán nuevas
+funcionalidades y herramientas de automatización.
 
-- Variables.
-- Operadores de comparación (`>=`).
-- Condicionales (`if`, `elif`, `else`).
-- Condiciones independientes.
-- Indentación en Python.
+## Tecnologías
 
-## Ejecución
-
-```bash
-python system_health.py
-```
-
-## Próximos pasos
-
-Continuar aprendiendo Python para consultar
-el consumo real del sistema mediante psutil.
+- Python 3
+- Linux
+- Git y GitHub
+- Visual Studio Code
