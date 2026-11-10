@@ -1,11 +1,30 @@
-# Comprobación de recursos del sistema
-cpu = 92 
-memoria = 65 
+import psutil
 
-# Verificar si la CPU supera el límite establecido
-if cpu >= 90 :
-    print("Alerta: Alerta cpu alto ")
+# Función de control de CPU
+def verificar_cpu(cpu):
+    if cpu >= 90:
+        return "Alerta"
+    else:
+        return "Normal"
 
-# Comprobar el consumo de memoria
-if memoria >= 60 :
-    print("Alerta: Alerta memoria alta ")
+
+# Función de control de RAM
+def controlar_ram(ram):
+    if ram >= 80:
+        return "Alerta!"
+    else:
+        return "Memoria normal"
+
+
+# Obtener datos reales del computador
+cpu_actual = psutil.cpu_percent(interval=1)
+ram_actual = psutil.virtual_memory().percent
+
+# Ejecutar nuestras funciones
+verificar = verificar_cpu(cpu_actual)
+verificar_ram = controlar_ram(ram_actual)
+
+# Mostrar resultados
+print("CPU:", cpu_actual, "%", verificar)
+print("RAM:", ram_actual, "%", verificar_ram)
+                
