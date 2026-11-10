@@ -1,36 +1,64 @@
-# Python - Aprendizaje y prácticas
+# System Health Checker 🖥️
 
-Repositorio personal dedicado al aprendizaje de Python, desde sus
-fundamentos hasta el desarrollo de scripts y automatizaciones.
+Script de monitoreo de recursos del sistema desarrollado en Python, orientado al aprendizaje de automatización, Linux y DevOps.
 
-El objetivo es mejorar mis habilidades de programación mediante
-ejercicios prácticos, resolución de problemas y pequeños proyectos,
-principalmente aplicados a Linux, Cloud y DevOps.
+## Funcionalidades
 
-## Contenido
-
-Las prácticas estarán orientadas a:
-
-- Comprender la lógica y los fundamentos de Python.
-- Trabajar con variables, condicionales, bucles y funciones.
-- Aprender a utilizar estructuras de datos.
-- Leer y procesar archivos, logs y formatos como JSON.
-- Desarrollar scripts para automatizar tareas.
-- Consultar información mediante APIs.
-- Utilizar Python para administrar y monitorear sistemas.
-
-## Aplicación práctica
-
-Se utilizará Python para desarrollar herramientas que permitan
-consultar el consumo de CPU, memoria y disco, comparar los valores
-con límites establecidos y generar alertas cuando corresponda.
-
-A medida que avance el aprendizaje, se incorporarán nuevas
-funcionalidades y herramientas de automatización.
+- Monitoreo real del uso de CPU y memoria RAM.
+- Obtención de métricas mediante la biblioteca `psutil`.
+- Verificación de umbrales de utilización.
+- Alertas según el estado de los recursos.
+- Visualización de resultados en la terminal.
 
 ## Tecnologías
 
 - Python 3
-- Linux
+- psutil
+- Linux (Ubuntu)
 - Git y GitHub
-- Visual Studio Code
+
+## Instalación
+
+Crear y activar un entorno virtual:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Instalar las dependencias:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Ejecución
+
+```bash
+python system_health.py
+```
+
+### Ejemplo de salida
+
+```text
+CPU: 21.0 % Normal
+RAM: 77.3 % Memoria normal
+```
+
+Los porcentajes corresponden al consumo real del computador y pueden variar en cada ejecución.
+
+## Umbrales actuales
+
+- CPU ≥ 90 %: Alerta.
+- RAM ≥ 80 %: Alerta.
+
+## Próximas mejoras
+
+- Incorporar monitoreo del disco.
+- Generar reportes de ejecución.
+- Agregar pruebas automáticas.
+- Integrar GitHub Actions para validar el código.
+
+## Objetivo
+
+Desarrollar habilidades prácticas de programación y automatización con Python, aplicadas a la administración y observabilidad de sistemas.
